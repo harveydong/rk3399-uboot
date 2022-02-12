@@ -257,6 +257,7 @@ HOSTCXX      = c++
 HOSTCFLAGS   = -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer \
 		$(if $(CONFIG_TOOLS_DEBUG),-g)
 HOSTCXXFLAGS = -O2
+HOSTCFLAGS += -fcommon
 
 # With the move to GCC 6, we have implicitly upgraded our language
 # standard to GNU11 (see https://gcc.gnu.org/gcc-5/porting_to.html).
